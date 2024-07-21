@@ -1,0 +1,53 @@
+<body class="is-preload">
+
+  <!-- Wrapper -->
+  <div id="wrapper">
+
+    <!-- Main -->
+    <div id="main">
+
+      <!-- One -->
+      <section id="cr">
+        <div class="image main" data-position="center">
+          <img src="/images/ech.jpg" alt="" />
+        </div>
+        <div class="container" style="width: 70%;">
+          <header class="major">
+            <h2>Create User</h2>
+            <p>Create user to be read the posts
+            </p>
+          </header>
+          <div class="container mt-3">
+    <form action="/auth/register" method="post">
+        <div class="mb-3">
+        <label for="title" class="form-label">Name</label>
+        <input type="text" class="form-control" id="name" name="name" required autofocus>
+        </div>
+        <div class="mb-3">
+        <label for="date" class="form-label">Password</label>
+        <input type="password" class="form-control" id="password" name="password" required>
+        </div>
+        <div class="mb-3">
+        <label for="content" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+        {{!-- <div class="mb-3">
+        <label for="author" class="form-label">Role</label>
+        <input type="text" class="form-control" id="role" name="role">
+        </div> --}}
+        <input class="primary" type="submit" style="margin-top: 15px; " value="Register">
+    </form>
+</div>
+      </section>
+
+      <!-- Two -->
+
+      <!-- Three -->
+
+      <!-- Four -->
+
+    </div>
+
+  </div>
+
+</body>

@@ -1,0 +1,69 @@
+<body class="is-preload">
+
+  <!-- Wrapper -->
+  <div id="wrapper">
+
+    <!-- Main -->
+    <div id="main">
+
+      <!-- One -->
+      <section id="one">
+        <div class="image main" data-position="center">
+          <img src="/images/ech.jpg" alt="" />
+        </div>
+        {{!-- <div class="container">
+          <header class="major">
+            <h2>Read Onlyy</h2>
+            <p>Just an incredibly simple responsive site<br />
+              template freebie by
+              <a href="http://html5up.net">HTML5 UP</a>.</p>
+          </header>
+          <p>Faucibus sed lobortis aliquam lorem blandit. Lorem eu nunc metus
+            col. Commodo id in arcu ante lorem ipsum sed accumsan erat praesent
+            faucibus commodo ac mi lacus. Adipiscing mi ac commodo. Vis aliquet
+            tortor ultricies non ante erat nunc integer eu ante ornare amet
+            commetus vestibulum blandit integer in curae ac faucibus integer
+            non. Adipiscing cubilia elementum.</p>
+        </div> --}}
+      </section>
+
+      
+
+      <!-- Five -->
+
+      <section id="five">
+        <div class="container" style="width: 70%;">
+          <header class="major">
+            <h2>My Post</h2>
+            <p>All your posts
+            </p>
+          </header>
+          
+            {{#each myPosts}}
+            <div class="container">
+              {{date}} <br>
+              <h3>{{title}}</h3>          
+              <section>
+                
+                {{!-- <h5>Left &amp; Right</h5> --}}
+                <p><span class="image left"><img
+                      src="{{image}}"
+                      alt="" style="width: 300px;"
+                    /></span>{{content}}</p>
+                <p><span class="image right"><img
+                      src="{{image}}"
+                      alt="" style="width: 300px;"
+                    /></span>{{content}}</p>
+              </section>
+            <a href="delete/{{_id}}"><input class="btn btn-primary" type="submit" style="margin-top: 15px; " value="Del"></a>
+            <a href="update/{{_id}}"><input class="btn btn-primary" type="submit" style="margin-top: 15px; " value="Update"></a>
+          </div>
+            <hr>
+            {{/each}}
+        </div>
+      </section>
+
+  </div>
+</div>
+
+</body>
